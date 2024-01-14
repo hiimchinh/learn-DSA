@@ -5,6 +5,11 @@ public:
     Node *left;
     Node *right;
     int height;
+    Node(int key)
+    {
+        this->key = key;
+        this->height = 1;
+    };
 };
 
 class AVLTree
@@ -16,5 +21,13 @@ public:
         if (n == NULL)
             return 0;
         return n->height;
+    }
+
+    Node *insertNode(Node *n, int key)
+    {
+        if (n == NULL)
+        {
+            //  Node(key);
+        }
     }
 };
